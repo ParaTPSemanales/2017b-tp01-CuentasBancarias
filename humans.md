@@ -7,5 +7,5 @@
 
 ## Estudiantes
 
-* XXX ([xxx](https://github.com/xxx))
-* XXX ([xxx](https://github.com/xxx))
+* Juan Manuel Martin Mora ([jmmora3](https://github.com/jmmora3))
+* Matias Tomaino ([MatiiTomaino](https://github.com/MatiiTomaino))
