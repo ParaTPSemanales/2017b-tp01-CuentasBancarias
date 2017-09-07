@@ -1,5 +1,7 @@
 package cuentabancaria;
 
-public class Cuentas {
+public class Cuenta {
 
+	
+	
 }
