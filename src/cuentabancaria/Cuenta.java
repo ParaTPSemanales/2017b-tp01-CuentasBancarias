@@ -8,9 +8,11 @@ public class Cuenta {
 		return this.getSaldo();
 	}
 	
-	public void sumarMonto(double monto)
-	{   if(monto > 0)
+	public boolean sumarMonto(double monto)
+	{   if(monto <= 0)
+		return false;
 		this.setSaldo(this.getSaldo() + monto);
+		return true;
 	}
 	//Constructores
 	public Cuenta(double saldo) {

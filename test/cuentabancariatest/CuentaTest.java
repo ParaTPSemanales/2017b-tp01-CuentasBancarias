@@ -48,9 +48,9 @@ public class CuentaTest {
 	public void queSumeMontoMayorACero()
 	{
 		monto = -1500;
-		cuenta.sumarMonto(monto);
-		Assert.assertTrue(cuenta.mostrarSaldo() >= 0);
+		Assert.assertTrue(!cuenta.sumarMonto(monto));
 	}
+
 	
 
 }
