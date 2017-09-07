@@ -22,6 +22,14 @@ public class Cuenta {
 		return false;
 	 }
 	
+	public boolean transferir(double monto, Cuenta cuentaDestino){
+
+		   if(!this.restarMonto(monto))
+			return false;
+
+		  cuentaDestino.sumarMonto(monto);
+			return true;
+		}
 	//Constructores
 	public Cuenta(double saldo) {
 		super();

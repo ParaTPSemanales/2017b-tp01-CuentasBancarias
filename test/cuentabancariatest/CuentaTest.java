@@ -65,7 +65,7 @@ public class CuentaTest {
     public void queTransfieraDinero(){
 	Cuenta cuentaDestino = new Cuenta(); 
 	cuenta.sumarMonto(monto);
-	cuenta.trasferir(monto, cuentaDestino);
+	cuenta.transferir(monto, cuentaDestino);
 	Assert.assertTrue(cuentaDestino.mostrarSaldo() == monto);
 	}
 	
