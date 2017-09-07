@@ -25,5 +25,13 @@ public class CuentaTest {
 		Assert.assertTrue(cuenta.mostrarSaldo() == 0);
 		
 	}
+	@Test
+	public void montoInicialMayorACero()
+	{   
+		monto = 130;
+		Cuenta otraCuenta = new Cuenta(monto);
+		Assert.assertTrue(otraCuenta.mostrarSaldo() == monto);
+		
+	}
 
 }
