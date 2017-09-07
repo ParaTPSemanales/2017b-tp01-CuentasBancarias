@@ -14,20 +14,17 @@ public class CuentaTest {
 	double monto;
 	
 	@Before
-	public void setUp()
-	{
+	public void setUp(){
 	 cuenta = new Cuenta();
 	}
 	
 	@Test
-	public void queMontoInicieEnCeroPorDefecto()
-	{
+	public void queMontoInicieEnCeroPorDefecto(){
 		Assert.assertTrue(cuenta.mostrarSaldo() == 0);
 		
 	}
 	@Test
-	public void montoInicialMayorACero()
-	{   
+	public void montoInicialMayorACero(){   
 		monto = 130;
 		Cuenta otraCuenta = new Cuenta(monto);
 		Assert.assertTrue(otraCuenta.mostrarSaldo() == monto);
@@ -35,8 +32,7 @@ public class CuentaTest {
 	}
 	
 	@Test 
-	public void queSumeMontoACuenta()
-	{
+	public void queSumeMontoACuenta(){
 		monto = 100;
 		double saldoFinal = monto + cuenta.mostrarSaldo();
 		cuenta.sumarMonto(monto);
@@ -45,12 +41,11 @@ public class CuentaTest {
 	}
 	
 	@Test
-	public void queSumeMontoMayorACero()
-	{
+	public void queSumeMontoMayorACero(){
 		monto = -1500;
 		Assert.assertTrue(!cuenta.sumarMonto(monto));
 	}
 
-	
+
 
 }
