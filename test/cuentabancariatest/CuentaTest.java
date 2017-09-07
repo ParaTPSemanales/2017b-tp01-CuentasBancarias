@@ -53,5 +53,10 @@ public class CuentaTest {
 	 Assert.assertTrue(cuenta.restarMonto(monto) == saldoFinal);	
 	 }
 
-
+	@Test
+	 public void queResteMontoMayorASaldo(){
+	 monto = 1500;
+	 cuenta.restarMonto(monto);
+	 Assert.assertTrue(cuenta.mostrarSaldo() >= 0);
+	 }
 }
