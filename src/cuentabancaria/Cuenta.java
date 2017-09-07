@@ -15,8 +15,11 @@ public class Cuenta {
 	}
 	
 	public double restarMonto(double monto){
-		this.setSaldo(this.getSaldo() - monto);
-		return this.getSaldo();
+		if (monto<this.getSaldo()) {
+			this.setSaldo(this.getSaldo() - monto);
+			return this.getSaldo();
+			}	
+		return 0;
 	 }
 	
 	//Constructores
