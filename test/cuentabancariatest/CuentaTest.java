@@ -48,8 +48,8 @@ public class CuentaTest {
 
 	@Test 
 	 public void queResteMontoACuenta(){
-	 monto = 200;
-	 double saldoFinal = monto + cuenta.mostrarSaldo();
+	 monto = 100;
+	 double saldoFinal =cuenta.mostrarSaldo() -  monto ;
 	 Assert.assertTrue(cuenta.restarMonto(monto) == saldoFinal);	
 	 }
 
