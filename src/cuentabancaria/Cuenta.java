@@ -9,7 +9,7 @@ public class Cuenta {
 	}
 	
 	public void sumarMonto(double monto)
-	{   
+	{   if(monto > 0)
 		this.setSaldo(this.getSaldo() + monto);
 	}
 	//Constructores
