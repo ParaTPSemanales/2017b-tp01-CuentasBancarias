@@ -33,5 +33,14 @@ public class CuentaTest {
 		Assert.assertTrue(otraCuenta.mostrarSaldo() == monto);
 		
 	}
+	
+	@Test 
+	public void queSumeMontoACuenta()
+	{
+		monto = 100;
+		double saldoFinal = monto + cuenta.mostrarSaldo();
+		Assert.assertTrue(cuenta.sumarMonto(monto) == saldoFinal);
+		
+	}
 
 }
