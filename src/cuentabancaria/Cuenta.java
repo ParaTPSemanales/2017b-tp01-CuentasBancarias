@@ -8,10 +8,23 @@ public class Cuenta {
 		return this.getSaldo();
 	}
 	
+	
+	//Constructores
+	public Cuenta(double saldo) {
+		super();
+		this.saldo = saldo;
+	}
+    
+	public Cuenta ()
+	{
+		this(0);
+	}
 	// Getters & Setters
 	public int getNumero() {
 		return numero;
 	}
+
+
 	public void setNumero(int numero) {
 		this.numero = numero;
 	}
