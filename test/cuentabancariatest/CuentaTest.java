@@ -39,7 +39,8 @@ public class CuentaTest {
 	{
 		monto = 100;
 		double saldoFinal = monto + cuenta.mostrarSaldo();
-		Assert.assertTrue(cuenta.sumarMonto(monto) == saldoFinal);
+		cuenta.sumarMonto(monto);
+		Assert.assertTrue( cuenta.mostrarSaldo() == saldoFinal);
 		
 	}
 

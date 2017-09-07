@@ -8,7 +8,10 @@ public class Cuenta {
 		return this.getSaldo();
 	}
 	
-	
+	public void sumarMonto(double monto)
+	{
+		this.setSaldo(this.getSaldo() + monto);
+	}
 	//Constructores
 	public Cuenta(double saldo) {
 		super();
