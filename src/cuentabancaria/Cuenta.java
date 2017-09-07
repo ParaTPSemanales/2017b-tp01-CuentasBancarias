@@ -14,6 +14,10 @@ public class Cuenta {
 		return true;
 	}
 	
+	public double restarMonto(double monto){
+		this.setSaldo(this.getSaldo() - monto);
+		return this.getSaldo();
+	 }
 	
 	//Constructores
 	public Cuenta(double saldo) {
