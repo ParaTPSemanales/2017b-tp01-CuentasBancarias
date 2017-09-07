@@ -49,14 +49,15 @@ public class CuentaTest {
 	@Test 
 	 public void queResteMontoACuenta(){
 	 monto = 100;
-	 double saldoFinal =cuenta.mostrarSaldo() -  monto ;
-	 Assert.assertTrue(cuenta.restarMonto(monto) == saldoFinal);	
+	 cuenta.setSaldo(300);
+	 double saldoFinal = cuenta.mostrarSaldo() -  monto ;
+	 cuenta.restarMonto(monto);
+	 Assert.assertTrue(cuenta.mostrarSaldo() == saldoFinal);	
 	 }
 
 	@Test
 	 public void queResteMontoMayorASaldo(){
 	 monto = 1500;
-	 cuenta.restarMonto(monto);
-	 Assert.assertTrue(cuenta.mostrarSaldo() >= 0);
+	 Assert.assertTrue(!cuenta.restarMonto(monto));
 	 }
 }

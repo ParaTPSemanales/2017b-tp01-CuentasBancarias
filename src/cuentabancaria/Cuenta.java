@@ -14,12 +14,12 @@ public class Cuenta {
 		return true;
 	}
 	
-	public double restarMonto(double monto){
+	public boolean restarMonto(double monto){
 		if (monto<this.getSaldo()) {
 			this.setSaldo(this.getSaldo() - monto);
-			return this.getSaldo();
+			return true;
 			}	
-		return 0;
+		return false;
 	 }
 	
 	//Constructores
