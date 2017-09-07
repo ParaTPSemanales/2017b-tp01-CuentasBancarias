@@ -60,4 +60,13 @@ public class CuentaTest {
 	 monto = 1500;
 	 Assert.assertTrue(!cuenta.restarMonto(monto));
 	 }
+	
+	@Test
+    public void queTransfieraDinero(){
+	Cuenta cuentaDestino = new Cuenta(); 
+	cuenta.sumarMonto(monto);
+	cuenta.trasferir(monto, cuentaDestino);
+	Assert.assertTrue(cuentaDestino.mostrarSaldo() == monto);
+	}
+	
 }
