@@ -69,4 +69,9 @@ public class CuentaTest {
 	Assert.assertTrue(cuentaDestino.mostrarSaldo() == monto);
 	}
 	
+	@Test
+	public void queNumeroCuentaSeaDistintoCero() {
+		
+		Assert.assertTrue(cuenta.getNumero() != 0);
+	}
 }
