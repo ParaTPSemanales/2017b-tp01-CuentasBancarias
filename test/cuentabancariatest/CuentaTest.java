@@ -74,4 +74,12 @@ public class CuentaTest {
 		
 		Assert.assertTrue(cuenta.getNumero() != 0);
 	}
+	
+	@Test
+	public void queNoHayanNumerosCuentasIguales() {
+		
+		Cuenta otraCuenta = new Cuenta();
+		
+		Assert.assertTrue(cuenta.getNumero() != otraCuenta.getNumero());
+	}
 }
