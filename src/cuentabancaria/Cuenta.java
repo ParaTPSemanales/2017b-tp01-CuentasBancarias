@@ -34,12 +34,13 @@ public class Cuenta {
 	public Cuenta(double saldo) {
 		super();
 		this.saldo = saldo;
-		this.numero = 1;
+		this.numero = ++ asignadorNumero;
 	}
     
 	public Cuenta ()
 	{
 		this(0);
+		this.numero = ++ asignadorNumero;
 	}
 	// Getters & Setters
 	public int getNumero() {
@@ -57,6 +58,7 @@ public class Cuenta {
 		this.saldo = saldo;
 	}
 	
+	private static int asignadorNumero = 0;
 	private int numero;
 	private double saldo;
 	
