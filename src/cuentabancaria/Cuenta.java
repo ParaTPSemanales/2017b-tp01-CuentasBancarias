@@ -34,6 +34,7 @@ public class Cuenta {
 	public Cuenta(double saldo) {
 		super();
 		this.saldo = saldo;
+		this.numero = 1;
 	}
     
 	public Cuenta ()
